@@ -1,0 +1,229 @@
+/* CSS für WebApp Brücke-Museum */
+
+/***********************
+ * 1. Fonts/Res
+ ***********************/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weigth: normal;
+}
+
+@font-face {
+	font-family: 'mgfonts';
+	src:url('fonts/mgfonts.eot');
+	src:url('fonts/mgfonts.eot?#iefix') format('embedded-opentype'),
+		url('fonts/mgfonts.woff') format('woff'),
+		url('fonts/mgfonts.ttf') format('truetype'),
+		url('fonts/mgfonts.svg#mgfonts') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon-pinterest, .icon-facebook, .icon-twitter, .icon-mail, .icon-google-plus, .icon-bookmark, .icon-bookmarks, .icon-file, .icon-file-2, .icon-spinner, .icon-eye, .icon-close, .icon-checkbox-partial, .icon-headphones, .icon-star, .icon-plus, .icon-chevron-right, .icon-minus, .icon-arrow-right, .icon-arrow-left,  .icon-volume-mute, .icon-volume-medium, .icon-play, .icon-pause {
+	font-family: 'mgfonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-pinterest:before {
+	content: "\e000";
+}
+.icon-facebook:before {
+	content: "\e009";
+}
+.icon-twitter:before {
+	content: "\e002";
+}
+.icon-mail:before {
+	content: "\e003";
+}
+.icon-google-plus:before {
+	content: "\e004";
+}
+.icon-bookmark:before {
+	content: "\e005";
+}
+.icon-bookmarks:before {
+	content: "\e006";
+}
+.icon-file:before {
+	content: "\e007";
+}
+.icon-file-2:before {
+	content: "\e008";
+}
+.icon-spinner:before {
+	content: "\e001";
+}
+.icon-eye:before {
+	content: "\e00a";
+}
+.icon-close:before {
+	content: "\e00b";
+}
+.icon-checkbox-partial:before {
+	content: "\e00c";
+}
+.icon-headphones:before {
+	content: "\e00d";
+}
+.icon-star:before {
+	content: "\e00e";
+}
+.icon-plus:before {
+	content: "\e00f";
+}
+.icon-chevron-right:before {
+	content: "\f054";
+}
+.icon-minus:before {
+	content: "\e010";
+}
+.icon-arrow-right:before {
+	content: "\e011";
+}
+.icon-arrow-left:before {
+	content: "\e012";
+}
+.icon-volume-mute:before {
+	content: "\e013";
+}
+.icon-volume-medium:before {
+	content: "\e014";
+}
+.icon-play:before {
+	content: "\e015";
+}
+.icon-pause:before {
+	content: "\e016";
+}
+
+
+
+/***********************
+ * 2. Normalize/Reset
+ ***********************/
+
+a {
+	text-decoration: none;
+}
+
+
+/***********************
+ * 3. Page Structure/Grid
+ ***********************/
+
+
+
+
+/***********************
+ * 4. Page: Header
+ ***********************/
+
+/* 4.1. Frontpage */
+
+.title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	font-weight:800;
+	color:white;
+	text-align:center;
+	margin-bottom:0;
+}
+
+.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight:800;
+	color:white;
+	text-align:center;
+	margin-top:0;
+}
+
+
+
+
+/***********************
+ * 5. Page: Nav
+ ***********************/
+
+.custom-nav-bg {
+	background: rgb(42, 107, 108);
+}
+
+.hauptnavigation {
+	width: 64%;
+	margin: auto;	
+	position:absolute;
+	bottom:5%;
+	left: 18%;
+	text-align:center;
+
+}
+
+.hauptnavigation a { 
+	padding-bottom: 4%;
+	padding-top: 4.25%;
+	width: 100%;
+	height: auto;
+	margin-right: 2.5%;
+	margin-bottom: 2.5%;
+	float: left;
+	background: rgba(255, 255, 255, 0.8);
+	-webkit-box-sizing: border-box;
+	color: #000;
+		
+}
+
+/***********************
+ * 6. Page: Main content
+ ***********************/
+
+p {color:green;}
+
+
+/***********************
+ * 7. Page: Footer
+ ***********************/
+
+
+
+/***********************
+ * 8. Forms/Comments
+ ***********************/
+
+
+
+/***********************
+ * 9. Buttons/Links
+ ***********************/
+
+.hauptnavigation .list-title {
+	font-weight: normal;
+	color: #3C3C3C;
+}
+.list-title {
+	margin-right: 7%;
+}
+
+
+/***********************
+ * 10. Effects/PlugIns
+ ***********************/
+
+
+
+/***********************
+ * 11. Misc
+ ***********************/
+
+
+
+
+/***********************
+ * 12. Media Queries
+ ***********************/
