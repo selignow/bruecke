@@ -29,19 +29,37 @@
 			<script src="res/jquery.backstretch.min.js" type="text/javascript"></script> 
 			<!-- <script src="res/jquery.mobile-1.4.3.min.js" type="text/javascript"></script>		-->
 
+
+			<script>
+		/*
+      var audio = document.getElementById('myplayer');
+      audio.addEventListener('touchstart', function() { audio.play(); }, false);
+	  
+	  var video = document.getElementById('video');
+      video.addEventListener('touchstart', function() { video.play(); }, false);
+	  */
+	  
+	  var androidVersion = navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8); 
+	  //var isPreAndroid4 = navigator.userAgent.toLowerCase().indexOf("android") > 4;
+	  var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
+	  alert(isPreAndroid4 + ' - ' + parseFloat(androidVersion) + ' - ' + parseInt(androidVersion));
+   </script>
+
+
+
 	</head>
 
 	<body>
 		
 			
-			<nav>
-				<div data-role="header" style="overflow:hidden;">
-					<a href="museum.html" data-icon="carat-l" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-carat-l ui-btn-icon-notext ui-shadowl"></a>
-					<h1>Station 101</h1>
-					<a href="index.html" data-icon="home" class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadowl"></a>
-				</div><!-- /header -->
-				
-			</nav>
+		<nav>
+			<div data-role="header" style="overflow:hidden;">
+				<a href="museum.html" data-icon="carat-l" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-carat-l ui-btn-icon-notext ui-shadowl"></a>
+				<h1>Station 101</h1>
+				<a href="index.html" data-icon="home" class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadowl"></a>
+			</div><!-- /header -->
+
+		</nav>
 		
 		
 		<header>
@@ -50,17 +68,34 @@
 		</header>
 		
 		
+		<article>
 	
 		<p>Erich Heckel: Bordeaux, 1929, Privatbesitz</p>
-		<audio controls="" autoplay="" name="media">
+		<audio controls="" autoplay="" loop name="media">
 			<source src="mp3/DEU_ERW_108.mp3" type="audio/mpeg" >
 		</audio>
 		
 		
 		
-		
-	
+		</article>
+		<article>
+			<h2>Audio</h2>
+			<audio controls id="myplayer">
+				<source src="http://html5multimedia.com/media/sayHello.mp3">
+				<source src="http://html5multimedia.com/media/sayHello.ogg">
+				<object type="application/x-shockwave-flash" data="player.swf" height="24" width="320">
+		        	<param name="movie" value="player.swf" />
+		        	<param name="flashvars" value="file=http://html5multimedia.com/media/sayHello.mp3" />
+		    	</object>
+				Your browser does not support HTML5 audio.
+			</audio>
 			
+			<h2>Audio via Video</h2>
+			<video id="video" controls>
+				<source src="http://html5multimedia.com/media/sayHello.mp3">
+			</video>
+			
+		</article>	
 			
 		
 					
