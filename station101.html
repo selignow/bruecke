@@ -43,7 +43,7 @@
 	  var androidVersion = navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8); 
 	  //var isPreAndroid4 = navigator.userAgent.toLowerCase().indexOf("android") > 4;
 	  var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
-	  alert(isPreAndroid4 + ' - ' + parseFloat(androidVersion) + ' - ' + parseInt(androidVersion));
+	  alert(isPreAndroid4 + ' - ' + parseFloat(androidVersion) + ' - ' + parseInt(androidVersion) + (src));
    </script>
 
 
@@ -95,6 +95,7 @@
 		
 		<article>
 			 <h2>JS mediaplayer</h2>
+			 <div id="playergeladen">(nicht)</div>
 			 <p>
 			 	<button id="p">Play</button>
 			 	<button id="s">Stop</button>

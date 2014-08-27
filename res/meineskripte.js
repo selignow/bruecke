@@ -58,6 +58,7 @@ window.onload = function() {
 				}
 			});
 			
+			document.getElementById("playergeladen").innerHTML =("geladen");
 	}, false);
 	
 	
