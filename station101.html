@@ -152,6 +152,14 @@
 <!-- Skriptaufrufe -->
 		<script>
 		alert("skripte unten");
+		
+		var mediaDat = null;
+var mediaTimer = null;
+var pos =0;
+var src="http://one.delius-books.de/sixcms/media.php/166/ENG%20108.mp3";
+
+		
+		
 		document.getElementById("p").addEventListener('click', function() {
 			
 			mediaDat = new Media(src, function() {
