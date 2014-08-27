@@ -8,7 +8,8 @@ alert("meineskripte laedt");
 window.onload = function() {
 	
 	document.addEventListener("deviceready", function(){
-		document.getelementById("p").addEventListener('click', function() {
+		alert("deviceready");
+		document.getElementById("p").addEventListener('click', function() {
 			
 			mediaDat = new Media(src, function() {
 				document.getElementById("gesamtdauer").innerHTML =("Dauer: ### ");
@@ -62,6 +63,7 @@ window.onload = function() {
 			});
 			
 			document.getElementById("playergeladen").innerHTML =("geladen");
+			alert("meineskripte fast geladen");
 	}, false);
 	
 	
