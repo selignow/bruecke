@@ -1,12 +1,15 @@
 var mediaDat = null;
 var mediaTimer = null;
 var pos =0;
+var src="http://one.delius-books.de/sixcms/media.php/166/ENG%20108.mp3";
+
+alert("meineskripte laedt");
 
 window.onload = function() {
 	
 	document.addEventListener("deviceready", function(){
 		document.getelementById("p").addEventListener('click', function() {
-			var src="http://one.delius-books.de/sixcms/media.php/166/ENG%20108.mp3";
+			
 			mediaDat = new Media(src, function() {
 				document.getElementById("gesamtdauer").innerHTML =("Dauer: ### ");
 				document.getElementById("pos").innerHTML =(" -0 sek");
