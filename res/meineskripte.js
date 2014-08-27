@@ -6,7 +6,7 @@ window.onload = function() {
 	
 	document.addEventListener("deviceready", function(){
 		document.getelementById("p").addEventListener('click', function() {
-			var src="https://one.delius-books.de/sixcms/media.php/166/ENG%20108.mp3";
+			var src="http://one.delius-books.de/sixcms/media.php/166/ENG%20108.mp3";
 			mediaDat = new Media(src, function() {
 				document.getElementById("gesamtdauer").innerHTML =("Dauer: ### ");
 				document.getElementById("pos").innerHTML =(" -0 sek");
@@ -18,10 +18,11 @@ window.onload = function() {
 			
 			mediaDat.play();
 			mediaDat.seekTo(pos*1000);
+			
 			setTimeout(function() {
 				document.getElementById("gesamtdauer").innerHTML = ("Dauer: ");
 				
-				if(mediaDat.getDuration()> -1)
+				if(mediaDat.getDuration() > -1)
 				document.getElementById("gesamtdauer").innerHTML +=(mediaDat.getDuration());
 				else
 				document.getElementById("gesamtdauer").innerHTML +=("###");
@@ -40,6 +41,7 @@ window.onload = function() {
 			}
 
 			});
+			
 			document.getElementById("s").addEventListener('click', function() {
 				if (mediaDat !=null) {
 					mediaDat.stop();
@@ -55,6 +57,7 @@ window.onload = function() {
 					mediaDat.pause();
 				}
 			});
+			
 	}, false);
 	
 	
