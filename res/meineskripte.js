@@ -47,7 +47,7 @@ window.onload = function() {
 			});
 			
 			document.getElementById("s").addEventListener('click', function() {
-				if (mediaDat !=null) {
+				if (mediaDat != null) {
 					mediaDat.stop();
 					mediaDat.release();
 					mediaTimer = null;
@@ -57,7 +57,7 @@ window.onload = function() {
 			});
 			
 			document.getElementById("pa").addEventListener('click', function() {
-				if (mediDat != null) {
+				if (mediaDat != null) {
 					mediaDat.pause();
 				}
 			});
